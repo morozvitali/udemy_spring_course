@@ -9,8 +9,8 @@
 
 
 
-    <bean id = "talker"
-          class = "spring_introduction.Dog">
+    <bean id = "myTalker"
+          class = "spring_introduction.Cat">
 
     </bean>
 
