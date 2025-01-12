@@ -6,14 +6,11 @@ public class Test3 {
 
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext.xml");
-        Talker talker = (Talker) context.getBean("myTalker", Talker.class);
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        //Talker talker = context.getBean("myTalker", Talker.class);
 
-        Person person = new Person(talker);
+        Person person = context.getBean("myPerson", Person.class);
         person.callYourPet();
-
         context.close();
-
     }
 }

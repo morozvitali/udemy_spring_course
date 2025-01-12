@@ -4,12 +4,15 @@ public class Person {
     private Talker talker;
 
     public Person(Talker talker) {
-        this.talker = talker;
+        System.out.println("Person bean created");
+    this.talker = talker;
+
+
+
     }
 
-    public void callYourPet(){
+    public void callYourPet() {
         System.out.println("Calling your pet");
         talker.say();
     }
-
 }
