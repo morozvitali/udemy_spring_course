@@ -7,6 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="data.properties"/>
+
+
     <bean id = "myPet"
           class = "spring_introduction.Dog">
     </bean>
@@ -14,9 +17,9 @@
     <bean id = "myPerson"
           class = "spring_introduction.Person">
         <property name="pet" ref = "myPet"/>
-        <property name="name" value = "Jimmy"/>
-        <property name="surname" value = "Beany"/>
-        <property name="age" value = "33"/>
+        <property name="name" value = "${person.name}"/>
+        <property name="surname" value = "${person.surname}"/>
+        <property name="age" value = "${person.age}"/>
     </bean>
 
 </beans>
