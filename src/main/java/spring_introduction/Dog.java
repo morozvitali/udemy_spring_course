@@ -10,4 +10,12 @@ public class Dog implements Pet {
     public void say () {
         System.out.println("Dog says 'hello'");
     }
+
+    public void init () {
+        System.out.println("Dog init method");
+    }
+
+    public void destroy () {
+        System.out.println("Dog destroy method");
+    }
 }
