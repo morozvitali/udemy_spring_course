@@ -9,8 +9,8 @@ public class Test2 {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Talker talker = (Talker) context.getBean("talker", Talker.class);
-        talker.say();
+        Pet pet = (Pet) context.getBean("pet", Pet.class);
+        pet.say();
         context.close();
 
     }

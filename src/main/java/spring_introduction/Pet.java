@@ -1,5 +1,5 @@
 package spring_introduction;
 
-public interface Talker {
+public interface Pet {
     void say();
 }
