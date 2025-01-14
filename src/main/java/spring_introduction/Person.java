@@ -2,6 +2,10 @@ package spring_introduction;
 
 public class Person {
     private Pet pet;
+    private int age;
+    private String name;
+    private String surname;
+
 
 //    public Person(Pet pet) {
 //        System.out.println("Person bean created");
@@ -9,7 +13,7 @@ public class Person {
 //    }
 
     public Person() {
-        System.out.println("Person bean created in constructor");
+        System.out.println("Person bean created in constructor, age= " + age + " name = " + name + ", surname = " + surname);
     }
 
     public void setPet (Pet pet) {
@@ -20,5 +24,33 @@ public class Person {
     public void callYourPet() {
         System.out.println("Calling your pet");
         pet.say();
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
     }
 }
