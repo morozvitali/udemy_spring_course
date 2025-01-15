@@ -1,5 +1,7 @@
 package spring_introduction;
+import org.springframework.stereotype.Component;
 
+@Component("dogBean")
 public class Dog implements Pet {
 
     public Dog() {
@@ -7,15 +9,7 @@ public class Dog implements Pet {
     }
 
     @Override
-    public void say () {
+    public void say() {
         System.out.println("Dog says 'hello'");
-    }
-
-    public void init () {
-        System.out.println("Dog init method");
-    }
-
-    public void destroy () {
-        System.out.println("Dog destroy method");
     }
 }
