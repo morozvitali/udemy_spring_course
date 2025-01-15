@@ -7,8 +7,12 @@ public class Test5 {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Dog myDog = (Dog) context.getBean("myDog", Dog.class);
-        myDog.say();
+
+        Person person = (Person) context.getBean("personBean", Person.class);
+        person.callYourPet();
+
+        //Cat myCat = context.getBean("catBean", Cat.class);
+        //myCat.say();
 
         context.close();
     }
