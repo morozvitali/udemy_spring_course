@@ -1,0 +1,16 @@
+package practice.constructorDI;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main11 {
+    public static void main(String[] args) {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("appPractContext11.xml");
+        Sandwich sandwich = (Sandwich) context.getBean("sandwich", Sandwich.class);
+        //Cheese cheese = (Cheese) context.getBean("cheese", Cheese.class);
+
+       // sandwich.eatSandvich();
+        context.close();
+    }
+}
+
+// creating di using properties file
