@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a97350-b4c1-4d9b-ba33-ca06b0b59725" name="Changes" comment="Task 40 hibernate one to one realisation" />
+    <list default="true" id="62a97350-b4c1-4d9b-ba33-ca06b0b59725" name="Changes" comment="Task ## ini" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,6 +109,15 @@
     </recent_temporary>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Task ## ini">
+      <option name="closed" value="true" />
+      <created>1738152818466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738152818466</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +131,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Task-04-Inversion-Of-Control" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -136,6 +145,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Task 40 hibernate one to one realisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 40 hibernate one to one realisation" />
+    <MESSAGE value="Task 04 Inversion Of Control" />
+    <MESSAGE value="Task ## ini" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task ## ini" />
   </component>
 </project>
