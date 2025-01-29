@@ -1,25 +1,39 @@
 package spring_introduction;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("personBean")
 public class Person {
+    @Autowired
     private Pet pet;
     private int age;
     private String name;
     private String surname;
 
-
+//    @Autowired
 //    public Person(Pet pet) {
 //        System.out.println("Person bean created");
 //    this.pet = pet;
 //    }
 
     public Person() {
-        System.out.println("Person bean created in constructor, age= " + age + " name = " + name + ", surname = " + surname);
+        System.out.println("Person bean created");
     }
 
+    @Autowired
     public void setPet (Pet pet) {
         this.pet = pet;
         System.out.println("Person set pet");
     }
+
+
+    public void methodSomeNameForTest (Pet pet) {
+        this.pet = pet;
+        System.out.println("Some method name => Person set pet");
+    }
+
+
 
     public void callYourPet() {
         System.out.println("Calling your pet");
