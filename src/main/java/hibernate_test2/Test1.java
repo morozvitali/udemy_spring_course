@@ -14,20 +14,36 @@ public class Test1 {
                 .addAnnotatedClass(Employee.class)
                 .addAnnotatedClass(Detail.class)
                 .buildSessionFactory();
+
+        Session session = null;
+
         try {
-            Session session = factory.getCurrentSession();
+            session = factory.getCurrentSession();
+            session.beginTransaction();
         /*     TODO основнаий код який не треба видаляти       */
 
-            Employee employee = new Employee("Bill", "Murray", "cinema", 658468);
-            Detail detail = new Detail("Los Angeles", "1651", "murray@gmail.com");
+
+            Employee emp = session.get(Employee.class, 4);
+            session.delete(emp);
+/*
+            Employee employee = new Employee("Arto", "Lindsay", "pop", 345);
+            Detail detail = new Detail("Brasil", "1345345134", "arto@gmail.com");
             employee.setDetail(detail);
 
-            session.beginTransaction();
-            session.save(employee);
+
+            Employee employee = new Employee("Aito", "Esay", "p", 3355);
+            Detail detail = new Detail("Cil", "15345134", "qwo@gmail.com");
+            employee.setDetail(detail);
+
+*/
+
+
+            //session.save(employee);
 
             session.getTransaction().commit();
             System.out.println("+");
         } finally {
+            session.close();
             factory.close();
         }
     }
