@@ -1,4 +1,4 @@
-package hibernate_test.entity;
+package hibernate_test2.entity;
 
 import jakarta.persistence.*;
 
@@ -19,6 +19,18 @@ public class Employee {
     private String department;
     @Column (name = "salary")
     private int salary;
+
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn(name = "details_id")
+    private Detail detail;
+
+    public Detail getDetail() {
+        return detail;
+    }
+
+    public void setDetail(Detail detail) {
+        this.detail = detail;
+    }
 
     public Employee() {
     }
