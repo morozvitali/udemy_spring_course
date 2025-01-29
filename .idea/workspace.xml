@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="501e5e5d-8882-4348-b52d-f93ac3f6f733" name="Changes" comment="Task 40 hibernate one to one realisation" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Task-04-Inversion-Of-Control" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;morozvitali&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/morozvitali/udemy_spring_course.git&quot;,
+    &quot;accountId&quot;: &quot;bb02b5da-b256-4d81-9188-8ab069bd2e19&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rZLYJEqoadCujVj3l8bdgVM25q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConfigWithAnnotations.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main10.executor": "Run",
+    "Application.Main11.executor": "Run",
+    "Application.Main12.executor": "Run",
+    "Application.Main8.executor": "Run",
+    "Application.Main9.executor": "Run",
+    "Application.MyConfig.executor": "Run",
+    "Application.Student.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.Test1.executor": "Run",
+    "Application.Test16.executor": "Run",
+    "Application.Test17.executor": "Run",
+    "Application.Test18.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test3.executor": "Run",
+    "Application.Test4.executor": "Run",
+    "Application.Test4t.executor": "Run",
+    "Application.Test5.executor": "Run",
+    "Application.Test_all.executor": "Run",
+    "Application.Test_create.executor": "Run",
+    "Application.Test_create2.executor": "Run",
+    "Application.Test_delete.executor": "Run",
+    "Application.Test_read.executor": "Run",
+    "Application.Test_update.executor": "Run",
+    "Application.test_create.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "245f772c",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Projects/mysql-connector-java-8.0.21",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\IT\IdeaProjects\udemy_spring_course\resourses" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="hibernate_test2" />
+      <recent name="hibernate_test.ai" />
+      <recent name="hibernate" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hibernate_test2.entity" />
+      <recent name="hibernate_test.ai" />
+      <recent name="hibernate_test.ai.entity" />
+      <recent name="hibernate_test" />
+      <recent name="practice.constructorDI" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test1">
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_test2.Test1" />
+      <module name="spring_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernate_test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_all" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_test.ai.Test_all" />
+      <module name="spring_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernate_test.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_delete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_test.ai.Test_delete" />
+      <module name="spring_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernate_test.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_read" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_test.ai.Test_read" />
+      <module name="spring_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernate_test.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_update" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_test.ai.Test_update" />
+      <module name="spring_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernate_test.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.Test_all" />
+        <item itemvalue="Application.Test_delete" />
+        <item itemvalue="Application.Test_update" />
+        <item itemvalue="Application.Test_read" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="501e5e5d-8882-4348-b52d-f93ac3f6f733" name="Changes" comment="" />
+      <created>1736761698303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736761698303</updated>
+      <workItem from="1736761707491" duration="5820000" />
+      <workItem from="1736840604296" duration="3533000" />
+      <workItem from="1736844470101" duration="8215000" />
+      <workItem from="1736864398982" duration="3256000" />
+      <workItem from="1736927038114" duration="17269000" />
+      <workItem from="1737008200308" duration="13117000" />
+      <workItem from="1737035370253" duration="410000" />
+      <workItem from="1737101707080" duration="12792000" />
+      <workItem from="1737547166578" duration="799000" />
+      <workItem from="1737559610239" duration="585000" />
+      <workItem from="1737560511249" duration="852000" />
+      <workItem from="1737710846857" duration="12923000" />
+      <workItem from="1737960201721" duration="19692000" />
+      <workItem from="1738051076571" duration="1568000" />
+      <workItem from="1738052840886" duration="7700000" />
+      <workItem from="1738136716700" duration="5445000" />
+      <workItem from="1738143393394" duration="3942000" />
+      <workItem from="1738148234288" duration="372000" />
+    </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1736762192753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736762192753</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Task 08 Dependency Injection Using Setters">
+      <option name="closed" value="true" />
+      <created>1736844192028</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736844192028</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Task 09 Dependency Injection Using class parameters">
+      <option name="closed" value="true" />
+      <created>1736846345335</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736846345335</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Task 10 Dependency Injection Using Using Properties File">
+      <option name="closed" value="true" />
+      <created>1736847264260</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736847264260</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Task 13 Dependency Injection Using Init Destroy Methods">
+      <option name="closed" value="true" />
+      <created>1736864456323</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736864456323</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Task 14 Annotations and xml file implementing">
+      <option name="closed" value="true" />
+      <created>1736933050686</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736933050686</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Task 15 Annotations">
+      <option name="closed" value="true" />
+      <created>1736935621333</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736935621333</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Task 16 Autowired for Setter Implementing">
+      <option name="closed" value="true" />
+      <created>1736945124940</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736945124940</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Task 16 Autowired for Setter Implementing">
+      <option name="closed" value="true" />
+      <created>1736945152488</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736945152488</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Task 17 Autowired for fields">
+      <option name="closed" value="true" />
+      <created>1736946281144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736946281144</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Task 18 Annotation Qualifier">
+      <option name="closed" value="true" />
+      <created>1736955088460</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736955088460</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Task 18 DI practice">
+      <option name="closed" value="true" />
+      <created>1737035527944</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1737035527944</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Task 40 init hibernate">
+      <option name="closed" value="true" />
+      <created>1737725839576</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737725839576</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Task 40 init hibernate pom error issue">
+      <option name="closed" value="true" />
+      <created>1737961145273</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737961145273</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Task 40 init hibernate and crud clear">
+      <option name="closed" value="true" />
+      <created>1737983511434</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737983511434</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Task 40 init hibernate update realised">
+      <option name="closed" value="true" />
+      <created>1737985437168</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737985437168</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Task 40 init hibernate delete realised">
+      <option name="closed" value="true" />
+      <created>1737987058196</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1737987058196</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Task 40 hibernate one to one realisation">
+      <option name="closed" value="true" />
+      <created>1738148089891</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1738148089891</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Task 40 hibernate one to one realisation">
+      <option name="closed" value="true" />
+      <created>1738148137093</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1738148137093</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <MESSAGE value="Task 08 Dependency Injection Using Setters" />
+    <MESSAGE value="Task 09 Dependency Injection Using class parameters" />
+    <MESSAGE value="Task 10 Dependency Injection Using Using Properties File" />
+    <MESSAGE value="Task 13 Dependency Injection Using Init Destroy Methods" />
+    <MESSAGE value="Task 14 Annotations and xml file implementing" />
+    <MESSAGE value="Task 15 Annotations" />
+    <MESSAGE value="Task 16 Autowired for Setter Implementing" />
+    <MESSAGE value="Task 17 Autowired for fields" />
+    <MESSAGE value="Task 18 Annotation Qualifier" />
+    <MESSAGE value="Task 18 DI practice" />
+    <MESSAGE value="Task 40 init hibernate" />
+    <MESSAGE value="Task 40 init hibernate pom error issue" />
+    <MESSAGE value="Task 40 init hibernate and crud clear" />
+    <MESSAGE value="Task 40 init hibernate update realised" />
+    <MESSAGE value="Task 40 init hibernate delete realised" />
+    <MESSAGE value="Task 45 hibernate one to one realisation" />
+    <MESSAGE value="Task 40 hibernate one to one realisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 40 hibernate one to one realisation" />
+  </component>
+</project>
