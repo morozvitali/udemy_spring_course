@@ -1,6 +1,6 @@
 package spring_introduction;
 
-public class Dog implements Talker{
+public class Dog implements Pet {
 
     public Dog() {
         System.out.println("Dog bean created");
