@@ -1,12 +1,12 @@
-package hibernate_test2;
+package hibernate_one_to_one;
 
-import hibernate_test2.entity.Detail;
-import hibernate_test2.entity.Employee;
+import hibernate_one_to_one.entity.Employee;
+import hibernate_one_to_one.entity.Detail;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class Test2 {
+public class Test1 {
     public static void main(String[] args) {
         /*     TODO основнаий код який не треба видаляти       */
         SessionFactory factory = new Configuration()
@@ -20,26 +20,25 @@ public class Test2 {
         try {
             session = factory.getCurrentSession();
             session.beginTransaction();
-
-            Employee employee = session.get(Employee.class, 3);
-            employee.setDetail(null);
+        /*     TODO основнаий код який не треба видаляти       */
 
 
-            Detail detail = session.get(Detail.class, 3);
-            session.delete(detail);
-            //System.out.println(detail);
-            //System.out.println(detail.getEmployee());
-
-
+            Employee emp = session.get(Employee.class, 4);
+            session.delete(emp);
 /*
-            Employee employee = new Employee("Bet", "Men", "hero", 2435632);
-            Detail detail = new Detail("city", "1wert4", "gfd@gmail.com");
+            Employee employee = new Employee("Arto", "Lindsay", "pop", 345);
+            Detail detail = new Detail("Brasil", "1345345134", "arto@gmail.com");
             employee.setDetail(detail);
-            detail.setEmployee(employee);
 
 
-             TODO основнаий код який не треба видаляти       */
+            Employee employee = new Employee("Aito", "Esay", "p", 3355);
+            Detail detail = new Detail("Cil", "15345134", "qwo@gmail.com");
+            employee.setDetail(detail);
 
+*/
+
+
+            //session.save(employee);
 
             session.getTransaction().commit();
             System.out.println("+");
