@@ -18,6 +18,18 @@ public class Detail {
     @Column (name = "email")
     private String email;
 
+    @OneToOne(  mappedBy = "detail",
+                cascade = {CascadeType.PERSIST, CascadeType.REFRESH}   )
+    private Employee employee;
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
     public Detail() {
     }
 
