@@ -1,5 +1,4 @@
 One to one
-
 Bi-directional - відношення коли обидві сторони знають одне про одного
 
 Використовуючи Bi-directional за допомогою анотації @OneToOne (mappedBy=) ми вказуємо Hibernate
