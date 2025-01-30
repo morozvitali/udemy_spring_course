@@ -1,4 +1,4 @@
-package hibernate_test2.entity;
+package hibernate_one_to_many.entity;
 
 import jakarta.persistence.*;
 
@@ -12,38 +12,36 @@ public class Employee {
     private int id;
 
     @Column (name = "name")
-    private String name;
+    private String firstName;
     @Column (name = "surname")
     private String surname;
-    @Column (name = "department")
-    private String department;
     @Column (name = "salary")
     private int salary;
 
-    @OneToOne (cascade = CascadeType.ALL)
-    @JoinColumn(name = "details_id")
-    private Detail detail;
 
-    public Detail getDetail() {
-        return detail;
+    @ManyToOne (cascade = {CascadeType.PERSIST, CascadeType.DETACH })
+    @JoinColumn(name = "department_id")
+    private Department department;
+
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDetail(Detail detail) {
-        this.detail = detail;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
     public Employee() {
     }
 
-    public Employee(String name, String surname, String department, int salary) {
-        this.name = name;
+    public Employee(String firstName, String surname, int salary) {
+        this.firstName = firstName;
         this.surname = surname;
-        this.department = department;
         this.salary = salary;
     }
 
-    public int getId() {
 
+    public int getId() {
         return id;
     }
 
@@ -51,12 +49,12 @@ public class Employee {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getSurname() {
@@ -65,14 +63,6 @@ public class Employee {
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
     }
 
     public int getSalary() {
@@ -87,9 +77,8 @@ public class Employee {
     public String toString() {
         return "Employee{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", firstName='" + firstName + '\'' +
                 ", surname='" + surname + '\'' +
-                ", department='" + department + '\'' +
                 ", salary=" + salary +
                 '}';
     }
