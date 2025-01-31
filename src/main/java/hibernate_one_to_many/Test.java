@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 
 public class Test {
     public static void main(String[] args) {
-        /*     TODO основнаий код який не треба видаляти       */
+        /*     TODO основнаий код який не треба видаляти      */
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class)
